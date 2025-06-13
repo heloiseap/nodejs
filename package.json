@@ -8,11 +8,11 @@
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node build/knex-cli.js",
+    "knex": "node build/knex-cli.cjs",
     "test": "vitest",
     "build": "tsup src --out-dir build",
-    "migrate": "node build/knex-cli.js migrate:latest",
-    "start": "node build/server.js"
+    "migrate": "node build/knex-cli.cjs migrate:latest",
+    "start": "node build/server.cjs"
   },
   "keywords": [],
   "author": "",
