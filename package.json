@@ -10,7 +10,7 @@
     "dev": "tsx watch src/server.ts",
     "knex": "tsx node_modules/knex/bin/cli.js",
     "test": "vitest",
-    "build": "tsup src --out-dir build"
+    "build": "npx tsup src knexfile.ts --out-dir build"
   },
   "keywords": [],
   "author": "",
