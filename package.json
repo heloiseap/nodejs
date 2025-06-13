@@ -10,7 +10,9 @@
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx node_modules/knex/bin/cli.js",
     "test": "vitest",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "migrate": "node build/knex-cli.js migrate:latest",
+    "start": "node build/server.js"
   },
   "keywords": [],
   "author": "",
